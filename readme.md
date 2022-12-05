@@ -54,6 +54,18 @@ Para dejarlo claro, un producto nunca puede incrementar su Quality mayor a 50, s
 # Preguntas de conocimiento en Laravel
 
 1. Qué paquete o estrategia utilizarías para levantar un sistema de administración rápidamente? (Autenticación y CRUDs)
+
+- Laravel Nova para CRUD y Laravel Breeze para authentication
+
 2. Una breve explicación de cómo laravel utiliza la injección de dependencias
+
+- Laravel usa el Service Container que ayuda con la inyección de dependencias via constructor o metodos. Este service container
+  se encarga de crear objetos con todas sus dependencias automaticamente como si fuera magia.
+
 3. En qué casos utilizarías un Query Scope?
+
+- En algunos casos el global scope me ayudaria a no modificar una consulta hecha por ejemplo: desde un controlador. Esta ya se anadira por defecto a toda consulta que se haga al modelo. Los local scopes los usaria para consultas mas frecuentes pero que no son usadas en todo momento como los global.
+
 4. Qué convenciones utilizas en la creación e implementación de migraciones?
+
+- Las convenciones que usa laravel por defecto.
